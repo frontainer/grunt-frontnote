@@ -1,0 +1,4 @@
+grunt-stylenote
+===============
+
+スタイルガイドジェネレーターStyleNoteのGruntプラグイン
