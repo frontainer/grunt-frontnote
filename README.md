@@ -57,11 +57,23 @@ Default value: `./guide`
 
 Directory in which to generate a style guide.
 
-#### options.includePath
+#### options.includeAssetPath
 Type: `String`
 Default value: `assets/**/*`
 
 The path of the file you want to copy the generated directory.
+
+#### options.css
+Type: `String|Array`
+Default value: `./style.css`
+
+Path of CSS that you want to read in HTML. In the array or string.
+
+#### options.script
+Type: `String|Array`
+Default value: `null`
+
+Path of JS that you want to read in HTML. In the array or string.
 
 #### options.verbose
 Type: `Boolean`
