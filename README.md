@@ -1,6 +1,6 @@
 # grunt-frontnote
 
-> StyleGuide Generator StyleNote  Plugin for Grunt.
+> StyleGuide Generator [FrontNote](https://github.com/frontainer/frontnote)  Plugin for Grunt.
 
 ## Getting Started
 This plugin requires 
@@ -38,66 +38,25 @@ grunt.initConfig({
 
 ### Options
 
-#### options.overview
-Type: `String`
-Default value: `__dirname + '/styleguide.md'`
-
-StyleGuide overview file's path.
-Overview file is required Markdown format. 
-
-#### options.template
-Type: `String`
-Default value: `__dirname + '/template/index.html'`
-
-StyleGuide template path. 
-
-#### options.out
-Type: `String`
-Default value: `./guide`
-
-Directory in which to generate a style guide.
-
-#### options.includeAssetPath
-Type: `String`
-Default value: `assets/**/*`
-
-The path of the file you want to copy the generated directory.
-
-#### options.css
-Type: `String|Array`
-Default value: `./style.css`
-
-Path of CSS that you want to read in HTML. In the array or string.
-
-#### options.script
-Type: `String|Array`
-Default value: `null`
-
-Path of JS that you want to read in HTML. In the array or string.
-
-#### options.verbose
-Type: `Boolean`
-Default value: `false`
-
-Display a detailed log.
+Options supported by [frontnote](https://github.com/frontainer/frontnote)
 
 
 ### Usage Examples
 	frontNote: {
-            options: {
-                out: './doc',
-                template: './my-template',
-                overview: './overview.md',
-                includePath: 'assets/**/*'
-            },
-            dev: {
-                options: {
-                },
-                files: [
-                	'/path/to/**/*.css',
-                	'/path/to/**/*.sass',
-                	'/path/to/**/*.less'
-                ]
-            }
-        }
+	    options: {
+	        out: './doc',
+	        template: './my-template',
+	        overview: './overview.md',
+	        includePath: 'assets/**/*'
+	    },
+	    dev: {
+	        options: {
+	        },
+	        files: [
+	            '/path/to/**/*.css',
+	            '/path/to/**/*.sass',
+	            '/path/to/**/*.less'
+	        ]
+	    }
+	}
 
