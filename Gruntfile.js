@@ -17,8 +17,10 @@ module.exports = function (grunt) {
                 '../frontnote/test/less/**/*.less'
             ],
             options: {
+                cwd: '../frontnote',
                 out: './docs',
-                verbose: true
+                verbose: false,
+                clear: true
             }
         }
     });
