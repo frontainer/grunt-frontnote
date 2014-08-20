@@ -26,7 +26,6 @@ module.exports = function (grunt) {
                 }
                 return filepath;
             });
-            console.log(files);
             styleGuide(files,options,done);
         });
     });
