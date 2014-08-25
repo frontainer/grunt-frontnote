@@ -40,6 +40,6 @@
     "frontnote"
   ],
   "dependencies": {
-    "frontnote": "^0.0.8"
+    "frontnote": "^0.0.9"
   }
 }
