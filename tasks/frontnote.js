@@ -15,16 +15,11 @@ module.exports = function (grunt) {
         var done = this.async(),
             options = this.options();
         this.files.forEach(function (f) {
-
             // filepathのマッピング
             var files = f.src.filter(function(filepath) {
                 return grunt.file.isFile(filepath);
             }).map(function(filepath) {
-                if (options.cwd) {
-                    var reg = new RegExp('^' + options.cwd + '/');
-                    filepath = filepath.replace(reg,'');
-                }
-                return filepath;
+               return filepath;
             });
             styleGuide(files,options,done);
         });

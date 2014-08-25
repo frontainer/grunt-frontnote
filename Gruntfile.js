@@ -14,10 +14,9 @@ module.exports = function (grunt) {
     grunt.initConfig({
         frontNote: {
             all: [
-                '../frontnote/test/less/**/*.less'
+                '../frontnote/test/sample/**/*.scss'
             ],
             options: {
-                cwd: '../frontnote',
                 out: './docs',
                 verbose: false,
                 clear: true
