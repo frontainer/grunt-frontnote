@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         frontNote: {
             all: [
-                '../frontnote/test/sample/**/*.scss'
+                './sample/**/*.scss'
             ],
             options: {
                 out: './docs',
@@ -23,11 +23,8 @@ module.exports = function (grunt) {
             }
         }
     });
-
     // Actually load this plugin's task(s).
     grunt.loadTasks('tasks');
-
     // By default, lint and run all tests.
     grunt.registerTask('default', ['frontNote']);
-
 };

@@ -7,21 +7,24 @@
 
 'use strict';
 
-var styleGuide = require('frontnote'),
+var FrontNote = require('frontnote'),
     fs = require('fs');
 
 module.exports = function (grunt) {
     grunt.registerMultiTask('frontNote', 'StyleGuide Generator for Grunt', function () {
         var done = this.async(),
             options = this.options();
+        var files = [];
         this.files.forEach(function (f) {
             // filepathのマッピング
-            var files = f.src.filter(function(filepath) {
+            var filteredFiles = f.src.filter(function(filepath) {
                 return grunt.file.isFile(filepath);
             }).map(function(filepath) {
                return filepath;
             });
-            styleGuide(files,options,done);
+            files = files.concat(filteredFiles);
         });
+        var note = new FrontNote(options);
+        note.render(files,done);
     });
 };
