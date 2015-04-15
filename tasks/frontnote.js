@@ -7,8 +7,7 @@
 
 'use strict';
 
-var FrontNote = require('frontnote'),
-    fs = require('fs');
+var FrontNote = require('frontnote');
 
 module.exports = function (grunt) {
     grunt.registerMultiTask('frontNote', 'StyleGuide Generator for Grunt', function () {
