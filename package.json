@@ -1,7 +1,7 @@
 {
   "name": "grunt-frontnote",
   "description": "StyleGuide Generator for Grunt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/frontainer/grunt-frontnote",
   "author": {
     "name": "frontainer",
@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "^0.4.5"
   },
   "keywords": [
     "gruntplugin",
@@ -40,6 +40,6 @@
     "frontnote"
   ],
   "dependencies": {
-    "frontnote": "^1.0.0"
+    "frontnote": "^1.1.1"
   }
 }
