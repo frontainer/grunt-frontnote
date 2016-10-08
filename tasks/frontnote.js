@@ -24,6 +24,8 @@ module.exports = function (grunt) {
             files = files.concat(filteredFiles);
         });
         var note = new FrontNote(options);
-        note.render(files,done);
+        note.render(files).subscribe(() => {
+            done();
+        });
     });
 };
