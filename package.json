@@ -1,7 +1,7 @@
 {
   "name": "grunt-frontnote",
   "description": "StyleGuide Generator for Grunt",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "https://github.com/frontainer/grunt-frontnote",
   "author": {
     "name": "frontainer",
